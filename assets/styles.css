@@ -384,19 +384,6 @@ h3 {
   padding: 24px;
 }
 
-.feature-card .number,
-.step .number {
-  display: inline-grid;
-  place-items: center;
-  width: 36px;
-  height: 36px;
-  margin-bottom: 18px;
-  border-radius: 6px;
-  background: #7fcdbf;
-  color: var(--dark);
-  font-weight: 900;
-}
-
 .feature-card p,
 .step p,
 .project-card p {
@@ -547,6 +534,14 @@ h3 {
 .contact-panel a {
   font-weight: 850;
   color: var(--dark);
+}
+
+.map-panel iframe {
+  width: 100%;
+  min-height: 420px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
 }
 
 .contact-form {
