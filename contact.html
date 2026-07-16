@@ -46,24 +46,30 @@
           <h2>Chatham Limited</h2>
           <p class="muted">77 Gillingham Road<br>Gillingham, England<br>ME7 4RZ</p>
           <p><a href="tel:07423690786">07423 690786</a></p>
+          <p><a href="mailto:info@chathamlimited.co.uk">info@chathamlimited.co.uk</a></p>
           <p class="muted">For the most useful first conversation, share the property location, the type of work needed and the stage you are at.</p>
         </aside>
         <div class="contact-panel">
-          <form class="contact-form">
+          <form class="contact-form" data-enquiry-form data-enquiry-email="info@chathamlimited.co.uk">
             <div class="field-grid">
-              <label>Name <input type="text" name="name" autocomplete="name"></label>
-              <label>Phone <input type="tel" name="phone" autocomplete="tel"></label>
+              <label>Name <input type="text" name="name" autocomplete="name" required></label>
+              <label>Phone <input type="tel" name="phone" autocomplete="tel" required></label>
             </div>
+            <label>Email <input type="email" name="email" autocomplete="email" required></label>
             <label>Project type
-              <select name="project-type">
-                <option>Property improvement</option>
-                <option>Refurbishment</option>
-                <option>Repair or maintenance</option>
-                <option>Planning a future project</option>
+              <select name="projectType" required>
+                <option value="Property improvement">Property improvement</option>
+                <option value="Commercial building work">Commercial building work</option>
+                <option value="Domestic building work">Domestic building work</option>
+                <option value="Construction installation">Construction installation</option>
+                <option value="Refurbishment">Refurbishment</option>
+                <option value="Repair or maintenance">Repair or maintenance</option>
+                <option value="Planning a future project">Planning a future project</option>
               </select>
             </label>
-            <label>Message <textarea name="message" placeholder="Briefly describe the work, property and ideal timing."></textarea></label>
-            <a class="btn dark" href="tel:07423690786">Send by phone</a>
+            <label>Message <textarea name="message" placeholder="Briefly describe the work, property and ideal timing." required></textarea></label>
+            <button class="btn dark" type="submit">Send enquiry</button>
+            <p class="form-status" data-enquiry-status aria-live="polite"></p>
           </form>
         </div>
       </div>
@@ -100,7 +106,7 @@
     <div class="footer-wrap">
       <div><strong>Chatham Limited</strong><p class="fine-print">77 Gillingham Road, Gillingham, England, ME7 4RZ</p></div>
       <div class="footer-links"><strong>Pages</strong><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a></div>
-      <div><strong>Contact</strong><p class="fine-print"><a href="tel:07423690786">07423 690786</a></p></div>
+      <div><strong>Contact</strong><p class="fine-print"><a href="tel:07423690786">07423 690786</a><br><a href="mailto:info@chathamlimited.co.uk">info@chathamlimited.co.uk</a></p></div>
     </div>
   </footer>
   <script src="assets/site.js"></script>
