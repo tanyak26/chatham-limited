@@ -639,6 +639,26 @@ textarea {
   gap: 8px;
 }
 
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  color: rgba(255, 255, 255, 0.78);
+  font-weight: 760;
+}
+
+.social-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  flex: 0 0 auto;
+}
+
+.social-link:hover {
+  color: var(--white);
+}
+
 .fine-print {
   margin: 0;
   color: rgba(255, 255, 255, 0.58);
