@@ -54,16 +54,22 @@ img {
 .top-contact {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 12px;
-  min-height: 36px;
-  padding: 7px 16px;
+  justify-content: flex-end;
+  gap: 14px;
+  width: min(1180px, calc(100% - 32px));
+  min-height: 38px;
+  margin: 0 auto;
+  padding: 8px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(7, 18, 26, 0.58);
   color: rgba(255, 255, 255, 0.88);
-  font-size: 0.9rem;
-  font-weight: 760;
+  font-size: 0.88rem;
+  font-weight: 720;
   line-height: 1.25;
+}
+
+.top-contact span {
+  color: rgba(255, 255, 255, 0.34);
+  font-weight: 500;
 }
 
 .top-contact a:hover {
@@ -699,9 +705,11 @@ textarea {
   }
 
   .top-contact {
-    gap: 8px;
-    padding-inline: 12px;
-    font-size: 0.82rem;
+    justify-content: flex-start;
+    gap: 9px;
+    width: min(calc(100% - 24px), 1180px);
+    min-height: 42px;
+    font-size: 0.81rem;
     flex-wrap: wrap;
   }
 
