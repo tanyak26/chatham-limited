@@ -131,6 +131,24 @@ img {
   background: rgba(255, 255, 255, 0.1);
 }
 
+.header-contact {
+  display: grid;
+  gap: 2px;
+  justify-items: end;
+  margin-left: auto;
+  font-size: 0.86rem;
+  font-weight: 760;
+  line-height: 1.35;
+}
+
+.header-contact a {
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.header-contact a:hover {
+  color: var(--white);
+}
+
 .nav-toggle {
   display: none;
   width: 42px;
@@ -625,6 +643,13 @@ textarea {
     display: block;
   }
 
+  .header-contact {
+    order: 3;
+    width: 100%;
+    justify-items: start;
+    padding: 0 0 12px 60px;
+  }
+
   .site-nav {
     position: absolute;
     top: 72px;
@@ -677,6 +702,11 @@ textarea {
 
   .brand span:last-child {
     font-size: 0.95rem;
+  }
+
+  .header-contact {
+    padding-left: 0;
+    font-size: 0.82rem;
   }
 
   .hero {
