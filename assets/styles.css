@@ -51,6 +51,25 @@ img {
   backdrop-filter: blur(18px);
 }
 
+.top-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 36px;
+  padding: 7px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(7, 18, 26, 0.58);
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.9rem;
+  font-weight: 760;
+  line-height: 1.25;
+}
+
+.top-contact a:hover {
+  color: var(--white);
+}
+
 .nav-wrap {
   width: min(1180px, calc(100% - 32px));
   min-height: 72px;
@@ -129,24 +148,6 @@ img {
 .site-nav a.active {
   color: var(--white);
   background: rgba(255, 255, 255, 0.1);
-}
-
-.header-contact {
-  display: grid;
-  gap: 2px;
-  justify-items: end;
-  margin-left: auto;
-  font-size: 0.86rem;
-  font-weight: 760;
-  line-height: 1.35;
-}
-
-.header-contact a {
-  color: rgba(255, 255, 255, 0.84);
-}
-
-.header-contact a:hover {
-  color: var(--white);
 }
 
 .nav-toggle {
@@ -643,16 +644,9 @@ textarea {
     display: block;
   }
 
-  .header-contact {
-    order: 3;
-    width: 100%;
-    justify-items: start;
-    padding: 0 0 12px 60px;
-  }
-
   .site-nav {
     position: absolute;
-    top: 72px;
+    top: 108px;
     left: 16px;
     right: 16px;
     display: none;
@@ -704,9 +698,11 @@ textarea {
     font-size: 0.95rem;
   }
 
-  .header-contact {
-    padding-left: 0;
+  .top-contact {
+    gap: 8px;
+    padding-inline: 12px;
     font-size: 0.82rem;
+    flex-wrap: wrap;
   }
 
   .hero {
